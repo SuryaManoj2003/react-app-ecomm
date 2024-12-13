@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-app-ecomm/static/css/main.d4be63e1.css",
-    "main.js": "/react-app-ecomm/static/js/main.0a21c331.js",
+    "main.js": "/react-app-ecomm/static/js/main.668c5d91.js",
     "static/css/295.a9d812c3.chunk.css": "/react-app-ecomm/static/css/295.a9d812c3.chunk.css",
     "static/js/295.8306a810.chunk.js": "/react-app-ecomm/static/js/295.8306a810.chunk.js",
     "static/css/77.b4bda7e1.chunk.css": "/react-app-ecomm/static/css/77.b4bda7e1.chunk.css",
@@ -11,7 +11,7 @@
     "static/media/shoes_1_1600x900.png": "/react-app-ecomm/static/media/shoes_1_1600x900.992d9d8df59e7c887180.png",
     "index.html": "/react-app-ecomm/index.html",
     "main.d4be63e1.css.map": "/react-app-ecomm/static/css/main.d4be63e1.css.map",
-    "main.0a21c331.js.map": "/react-app-ecomm/static/js/main.0a21c331.js.map",
+    "main.668c5d91.js.map": "/react-app-ecomm/static/js/main.668c5d91.js.map",
     "295.a9d812c3.chunk.css.map": "/react-app-ecomm/static/css/295.a9d812c3.chunk.css.map",
     "295.8306a810.chunk.js.map": "/react-app-ecomm/static/js/295.8306a810.chunk.js.map",
     "77.b4bda7e1.chunk.css.map": "/react-app-ecomm/static/css/77.b4bda7e1.chunk.css.map",
@@ -21,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.d4be63e1.css",
-    "static/js/main.0a21c331.js"
+    "static/js/main.668c5d91.js"
   ]
 }
