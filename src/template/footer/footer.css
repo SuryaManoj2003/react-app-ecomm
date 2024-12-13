@@ -1,0 +1,131 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  margin: 50px 0;
+  justify-items: center;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.footer-links-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-container-1 h1 {
+  font-size: clamp(10px, 10vw, 100px);
+}
+
+.footer-container-1 p {
+  font-size: 20px;
+}
+
+.address {
+  font-size: 20px;
+}
+
+.footer-section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 150px 0;
+  gap: 30px;
+}
+
+.image-container-1 {
+  align-self: end;
+}
+
+.image-container-2 {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.image-container-1 img {
+  width: auto;
+  height: 230px;
+  transition: all 0.4s ease;
+}
+
+.image-container-2 img {
+  width: auto;
+  height: 400px;
+  transition: all 0.4s ease;
+}
+
+.image-container-3 img {
+  width: auto;
+  height: 200px;
+  transition: all 0.4s ease;
+}
+
+.image-container-1 img:hover,
+.image-container-2 img:hover,
+.image-container-3 img:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "a a e"
+      "b c d";
+    justify-items: start;
+  }
+  .footer-container-1 {
+    grid-area: a;
+  }
+  .footer-container-2 {
+    grid-area: b;
+  }
+  .footer-container-3 {
+    grid-area: c;
+  }
+  .footer-container-4 {
+    grid-area: d;
+  }
+  .footer-container-5 {
+    grid-area: e;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "a a a "
+      "b c d"
+      "e e e";
+    justify-items: start;
+  }
+  .footer-container-1 {
+    grid-area: a;
+  }
+  .footer-container-2 {
+    grid-area: b;
+  }
+  .footer-container-3 {
+    grid-area: c;
+  }
+  .footer-container-4 {
+    grid-area: d;
+  }
+  .footer-container-5 {
+    grid-area: e;
+  }
+}

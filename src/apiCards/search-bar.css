@@ -1,0 +1,32 @@
+table {
+  /* border-collapse: none; */
+  margin-top: 10px;
+  width: 100%;
+}
+th {
+  border: 1px solid black;
+}
+td {
+  /* border-collapse: none; */
+  border: 1px solid black;
+  /* Add a border if needed */
+  padding: 10px; /* Equivalent to cellpadding */
+  text-align: center;
+}
+
+.s-no {
+  width: 25%;
+}
+
+.title {
+  width: 50%;
+}
+
+.price {
+  width: 25%;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+}

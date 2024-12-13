@@ -1,0 +1,21 @@
+/* header {
+  background-color: rgb(247, 167, 167);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+} */

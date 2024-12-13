@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+#root {
+  margin: 0 3%;
+}
+
+.main-heading {
+  width: 100%;
+  font-size: clamp(60px, 20vw, 300px);
+  text-align: center;
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+.nav-bar {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar-heading {
+  text-align: center;
+  margin: 5px;
+  font-size: clamp(10px, 10vw, 20px);
+}
+
+.links-container {
+  display: flex;
+  gap: 20%;
+  justify-content: space-between;
+}
+
+.links-container a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.links-container a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background-color: white;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+
+.links-container a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+.search input {
+  width: 70%;
+  padding-left: 10px;
+  background-color: black;
+
+  border: none;
+}
+
+.search input::placeholder {
+  color: white;
+  background-color: black;
+}
+
+.search input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color: black;
+}
+
+.search button {
+  background-color: black;
+  outline: none;
+  border: none;
+}
+
+.options-button {
+  display: none;
+}
+
+.options-container {
+  padding: 20px;
+  position: absolute;
+  top: 25px;
+  right: -7px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.options-container a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.options-container a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background-color: white;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+
+.options-container a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .links-container {
+    display: none;
+  }
+  .search {
+    gap: 20px;
+  }
+  .options-button {
+    display: inline-block;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
